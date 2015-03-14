@@ -1,15 +1,18 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 class Address
 {
 public:
 	Address();
 	~Address();
+	const std::string name() const
+	{
+		return _name;
+	}
+
 private:
-	string name;
-	string phonenum;
-	int callerID;
+	std::string _name;
+	std::string _phonenum;
+	int _callerID;
 };
