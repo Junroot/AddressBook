@@ -10,5 +10,6 @@ public:
 	~Address();
 private:
 	string name;
-	int *phonenum;
+	string phonenum;
+	int callerID;
 };
