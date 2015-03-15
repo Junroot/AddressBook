@@ -15,13 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="program.cpp">
+    <ClInclude Include="AddressBook.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AddressBookMain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AddressBook.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sort.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <Text Include="list.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+=======
     <ClInclude Include="AddressBook.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="sort.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+>>>>>>> origin/master
   </ItemGroup>
 </Project>
