@@ -86,14 +86,20 @@
 =======
     <ClCompile Include="program.cpp" />
     <ClCompile Include="sort.cpp" />
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AddressBook.h" />
     <ClInclude Include="sort.h" />
+<<<<<<< HEAD
   </ItemGroup>
   <ItemGroup>
     <Text Include="list.txt" />
+=======
+>>>>>>> origin/master
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

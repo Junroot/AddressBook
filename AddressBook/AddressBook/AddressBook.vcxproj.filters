@@ -29,6 +29,9 @@
     <ClCompile Include="sort.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="sort.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
 <<<<<<< HEAD
@@ -42,6 +45,9 @@
     <ClInclude Include="sort.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
   </ItemGroup>
 </Project>
