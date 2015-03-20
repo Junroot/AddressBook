@@ -76,6 +76,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AddressBook.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="sms.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddressBook.h" />
+    <ClInclude Include="sms.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
