@@ -41,3 +41,12 @@ void AddressBook::SearchByNum(string num)
 		}
 	}
 }
+
+void AddressBook::AddPerson(person p)
+{
+	people.insert(p);
+}
+void AddressBook::DeletePerson(person p)
+{
+	people.erase(p.first);
+}
