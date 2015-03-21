@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <stdlib.h>
 #include <conio.h>
 #include <Windows.h>
@@ -28,17 +28,17 @@ int MainPrint()
 	while (1)
 	{
 		system("cls");
-		cout << "¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á" << endl;
+		cout << "â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– " << endl;
 		cout << "\tMy number : 01035123546" << endl << endl;
-		if (sel == 1) cout << "\t¢º1. AddressBook" << endl;
+		if (sel == 1) cout << "\tâ–¶1. AddressBook" << endl;
 		else cout << "\t1. AddressBook" << endl;
-		if (sel == 2) cout << "\t¢º2. Call" << endl;
+		if (sel == 2) cout << "\tâ–¶2. Call" << endl;
 		else cout << "\t2. Call" << endl;
-		if (sel == 3) cout << "\t¢º3. Message" << endl;
+		if (sel == 3) cout << "\tâ–¶3. Message" << endl;
 		else cout << "\t3. Message" << endl;
-		if (sel == 4) cout << "\t¢º4. Exit" << endl;
+		if (sel == 4) cout << "\tâ–¶4. Exit" << endl;
 		else cout << "\t4. Exit" << endl;
-		cout << "¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á" << endl;
+		cout << "â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– " << endl;
 		key = getch();
 		if (key == UP && sel>1)	sel--;
 		else if (key == DOWN && sel < 4) sel++;
@@ -53,16 +53,16 @@ void AddressBookPrint(AddressBook* book)
 	while (1)
 	{
 		system("cls");
-		cout << "¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á" << endl;
+		cout << "â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– " << endl;
 		setcolor(10,0);
 		cout << "\t\t\tAddressBook" << endl;
 		setcolor(2, 0);
 		cout << "\tENTER : Search"<< endl;
 		cout << "\tESC : Back" << endl;
-		cout << "\t ¡ç : Delete, ¡æ : Add" << endl << endl;
+		cout << "\t â† : Delete, â†’ : Add" << endl << endl;
 		setcolor(15, 0);
 		book->Print(sel);
-		cout << "¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á" << endl;
+		cout << "â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– " << endl;
 		key = getch();
 		if (key == UP && sel>1)	sel--;
 		else if (key == DOWN && sel < book->Size()) sel++;
@@ -87,7 +87,7 @@ void AddressBookPrint(AddressBook* book)
 			cout << "\tSearch : ";
 			cin >> search;
 			system("cls");
-			cout << "¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á" << endl;
+			cout << "â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– " << endl;
 			setcolor(10, 0);
 			cout << "\t\t\tAddressBook" << endl;
 			setcolor(2, 0);
@@ -95,7 +95,7 @@ void AddressBookPrint(AddressBook* book)
 			cout << "\tSearch : ";
 			setcolor(15, 0);
 			cout << search << endl << endl;
-			cout << "¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á" << endl;
+			cout << "â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– " << endl;
 			book->SearchByName(search);
 			book->SearchByNum(search);
 			while (key = getch() != ESC);
