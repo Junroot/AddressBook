@@ -5,7 +5,7 @@
 #ifndef __ADDRESS_BOOK_H__
 #define __ADDRESS_BOOK_H__
 
-typedef pair<std::string, std::string> person;
+typedef std::pair<std::string, std::string> person;
 
 class AddressBook
 {
@@ -14,11 +14,12 @@ public:
 	~AddressBook();
 	void ReadFile();
 	void WriteFile();
-	void Print();
+	void Print(int sel);
 	void SearchByName(std::string name);
 	void SearchByNum(std::string num);
 	void AddPerson(person p);
-	void DeletePerson(person p);
+	void DeletePerson(int sel);
+	int Size()	{ return people.size(); }
 
 private:
 	std::map<std::string, std::string> people;
