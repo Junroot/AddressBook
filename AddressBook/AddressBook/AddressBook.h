@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <map>
 #include <string>
 
@@ -22,7 +22,7 @@ public:
 	int Size()	{ return people.size(); }
 
 private:
-	std::map<std::string, std::string> people;
+	std::map<std::string, person> people;
 };
 
 #endif

@@ -1,24 +1,15 @@
-﻿빌드 시작: 2015-03-22 오전 2:31:52
-     1>2 노드의 "C:\Users\JunGeun\Desktop\ROOT\Class\OODP\AddressBook\AddressBook\AddressBook\AddressBook.vcxproj" 프로젝트(Build 대상)입니다.
+﻿빌드 시작: 2015-03-22 오후 3:12:25
+     1>2 노드의 "C:\Users\SSOCKYEP\Documents\GitHub\MyAddressBook\AddressBook\AddressBook\AddressBook.vcxproj" 프로젝트(Build 대상)입니다.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AddressBook.cpp main.cpp sms.cpp
-         sms.cpp
-         main.cpp
-     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\main.cpp(42): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\conio.h(131) : 'getch' 선언을 참조하십시오.
-     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\main.cpp(66): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\conio.h(131) : 'getch' 선언을 참조하십시오.
-     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\main.cpp(101): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\conio.h(131) : 'getch' 선언을 참조하십시오.
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AddressBook.cpp
          AddressBook.cpp
-         코드를 생성하고 있습니다...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\JunGeun\Desktop\ROOT\Class\OODP\AddressBook\AddressBook\Debug\AddressBook.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\JunGeun\Desktop\ROOT\Class\OODP\AddressBook\AddressBook\Debug\AddressBook.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\JunGeun\Desktop\ROOT\Class\OODP\AddressBook\AddressBook\Debug\AddressBook.lib" /MACHINE:X86 Debug\AddressBook.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\SSOCKYEP\Documents\GitHub\MyAddressBook\AddressBook\Debug\AddressBook.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\SSOCKYEP\Documents\GitHub\MyAddressBook\AddressBook\Debug\AddressBook.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\SSOCKYEP\Documents\GitHub\MyAddressBook\AddressBook\Debug\AddressBook.lib" /MACHINE:X86 Debug\AddressBook.obj
          Debug\main.obj
          Debug\sms.obj
-         AddressBook.vcxproj -> C:\Users\JunGeun\Desktop\ROOT\Class\OODP\AddressBook\AddressBook\Debug\AddressBook.exe
-     1>"C:\Users\JunGeun\Desktop\ROOT\Class\OODP\AddressBook\AddressBook\AddressBook\AddressBook.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+         AddressBook.vcxproj -> C:\Users\SSOCKYEP\Documents\GitHub\MyAddressBook\AddressBook\Debug\AddressBook.exe
+     1>"C:\Users\SSOCKYEP\Documents\GitHub\MyAddressBook\AddressBook\AddressBook\AddressBook.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
 
 빌드했습니다.
 
-경과 시간: 00:00:09.15
+경과 시간: 00:00:01.09
