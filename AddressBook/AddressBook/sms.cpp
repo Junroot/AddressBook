@@ -88,7 +88,7 @@ bool SMS::write_inboxfile()
 	{
 		inbox_file << it->get_time() << endl;
 		inbox_file << it->get_sender() << endl;
-		inbox_file << '\"' << it->get_content() << '\"' << endl;
+		inbox_file << '"' << it->get_content() << '"' << endl;
 	}
 	inbox_file.close();
 	return true;
@@ -101,7 +101,7 @@ bool SMS::write_outboxfile()
 	{
 		outbox_file << it->get_time() << endl;
 		outbox_file << it->get_receiver() << endl;
-		outbox_file << '\"' << it->get_content() << '\"' << endl;
+		outbox_file << '"' << it->get_content() << '"' << endl;
 	}
 	outbox_file.close();
 	return true;
