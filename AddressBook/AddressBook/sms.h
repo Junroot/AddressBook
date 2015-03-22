@@ -7,27 +7,6 @@
 #include <fstream>
 #include <algorithm>
 
-class SMS
-{
-public:
-	SMS();
-	~SMS();
-
-	bool read_inboxfile();
-	bool read_outboxfile();
-	bool write_inboxfile();
-	bool write_outboxfile();
-
-	void print_inboxlists();
-	void print_outboxlists();
-
-private:
-	void sort_inbox();
-	void sort_outbox();
-	std::vector<in_sms> inbox;
-	std::vector<out_sms> outbox;
-};
-
 class in_sms
 {
 public:
@@ -69,6 +48,27 @@ private:
 	std::string receiver;
 	std::string send_time;
 
+};
+
+class SMS
+{
+public:
+	SMS();
+	~SMS();
+
+	bool read_inboxfile();
+	bool read_outboxfile();
+	bool write_inboxfile();
+	bool write_outboxfile();
+
+	void print_inboxlists();
+	void print_outboxlists();
+
+private:
+	void sort_inbox();
+	void sort_outbox();
+	std::vector<in_sms> inbox;
+	std::vector<out_sms> outbox;
 };
 
 #endif

@@ -17,6 +17,9 @@ public:
 	void Print(int sel);
 	void SearchByName(std::string name);
 	void SearchByNum(std::string num);
+
+	std::string SearchName(std::string num);
+
 	void AddPerson(person p);
 	void DeletePerson(int sel);
 	int Size()	{ return people.size(); }

@@ -71,6 +71,17 @@ void AddressBook::SearchByNum(string num)
 		}
 	}
 }
+string AddressBook::SearchName(string num)
+{
+	for (map<string, person>::iterator it = people.begin();
+		it != people.end(); ++it)
+	{
+		if (it->second.second == num)
+		{
+			return it->second.first;
+		}
+	}
+}
 
 void AddressBook::AddPerson(person p)
 {
