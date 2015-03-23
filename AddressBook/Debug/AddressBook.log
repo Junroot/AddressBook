@@ -1,16 +1,30 @@
-﻿빌드 시작: 2015-03-24 오전 12:58:27
-     1>2 노드의 "D:\Users\HyoSeok\Documents\GitHub\AddressBook\AddressBook\AddressBook.vcxproj" 프로젝트(Build 대상)입니다.
+﻿빌드 시작: 2015-03-24 오전 2:30:02
+     1>2 노드의 "C:\Users\JunGeun\Documents\Visual Studio 2013\Projects\AddressBook\AddressBook\AddressBook.vcxproj" 프로젝트(Build 대상)입니다.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt sms.cpp
-         sms.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\jungeun\documents\visual studio 2013\projects\addressbook\addressbook\main.cpp(44): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\conio.h(131) : 'getch' 선언을 참조하십시오.
+     1>c:\users\jungeun\documents\visual studio 2013\projects\addressbook\addressbook\main.cpp(68): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\conio.h(131) : 'getch' 선언을 참조하십시오.
+     1>c:\users\jungeun\documents\visual studio 2013\projects\addressbook\addressbook\main.cpp(103): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\conio.h(131) : 'getch' 선언을 참조하십시오.
+     1>c:\users\jungeun\documents\visual studio 2013\projects\addressbook\addressbook\main.cpp(121): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\conio.h(131) : 'getch' 선언을 참조하십시오.
+     1>c:\users\jungeun\documents\visual studio 2013\projects\addressbook\addressbook\main.cpp(143): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\conio.h(131) : 'getch' 선언을 참조하십시오.
+     1>c:\users\jungeun\documents\visual studio 2013\projects\addressbook\addressbook\main.cpp(163): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\conio.h(131) : 'getch' 선언을 참조하십시오.
+     1>c:\users\jungeun\documents\visual studio 2013\projects\addressbook\addressbook\main.cpp(184): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\conio.h(131) : 'getch' 선언을 참조하십시오.
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\HyoSeok\Documents\GitHub\AddressBook\Debug\AddressBook.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Users\HyoSeok\Documents\GitHub\AddressBook\Debug\AddressBook.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\HyoSeok\Documents\GitHub\AddressBook\Debug\AddressBook.lib" /MACHINE:X86 Debug\AddressBook.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\JunGeun\Documents\Visual Studio 2013\Projects\AddressBook\Debug\AddressBook.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\JunGeun\Documents\Visual Studio 2013\Projects\AddressBook\Debug\AddressBook.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\JunGeun\Documents\Visual Studio 2013\Projects\AddressBook\Debug\AddressBook.lib" /MACHINE:X86 Debug\AddressBook.obj
          Debug\call.obj
          Debug\main.obj
          Debug\sms.obj
-         AddressBook.vcxproj -> D:\Users\HyoSeok\Documents\GitHub\AddressBook\Debug\AddressBook.exe
-     1>"D:\Users\HyoSeok\Documents\GitHub\AddressBook\AddressBook\AddressBook.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+         AddressBook.vcxproj -> C:\Users\JunGeun\Documents\Visual Studio 2013\Projects\AddressBook\Debug\AddressBook.exe
+     1>"C:\Users\JunGeun\Documents\Visual Studio 2013\Projects\AddressBook\AddressBook\AddressBook.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
 
 빌드했습니다.
 
-경과 시간: 00:00:01.12
+경과 시간: 00:00:02.73

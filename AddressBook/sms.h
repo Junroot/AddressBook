@@ -9,6 +9,7 @@
 #include <algorithm>
 #include "AddressBook.h"
 
+
 class in_sms
 {
 public:
@@ -63,14 +64,19 @@ public:
 	bool write_inboxfile();
 	bool write_outboxfile();
 
-	void print_inboxlists(AddressBook book);
-	void print_outboxlists(AddressBook book);
+	void print_inboxlists(AddressBook book,int inp);
+	void print_outboxlists(AddressBook book,int inp);
+	void print_insms(AddressBook book, int inp);
+	void print_outsms(AddressBook book, int inp);
+	
+	int inSize() { return inbox.size(); }
+	int outSize() { return outbox.size(); }
 
 private:
 	std::map<std::string,in_sms> inbox;
 	std::map<std::string,out_sms> outbox;
 };
 
-void print_sms(in_sms sms, AddressBook book);
-void print_sms(out_sms sms, AddressBook book);
+
+
 #endif

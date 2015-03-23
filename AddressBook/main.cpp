@@ -106,7 +106,7 @@ void AddressBookPrint(AddressBook* book)
 	}
 }
 
-void CallPrint(Call* call,AddressBook* book)
+void CallPrint(Call* call, AddressBook* book)
 {
 	int key;
 	system("cls");
@@ -121,11 +121,83 @@ void CallPrint(Call* call,AddressBook* book)
 	while (key = getch() != ESC);
 }
 
+void SMSPrint(SMS* sms, AddressBook* book)
+{
+	int key;
+	int sel = 1;
+	while (1)
+	{
+		system("cls");
+		cout << "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■" << endl;
+		setcolor(10, 0);
+		cout << "\t\t\tSMS" << endl;
+		setcolor(2, 0);
+		cout << "\tENTER : Select" << endl;
+		cout << "\tESC : Back" << endl << endl;
+		setcolor(15, 0);
+		if (sel == 1) cout << "\t▶1. Sent" << endl;
+		else cout << "\t1. Sent" << endl;
+		if (sel == 2) cout << "\t▶2. Received" << endl;
+		else cout << "\t2. Received" << endl;
+		cout << "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■" << endl;
+		key = getch();
+		if (key == UP && sel > 1)	sel--;
+		else if (key == DOWN && sel < 2) sel++;
+		else if (key == ENTER)
+		{
+			if (sel == 1)
+			{
+				int inp = 1;
+				while (1)
+				{
+					system("cls");
+					cout << "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■" << endl;
+					setcolor(10, 0);
+					cout << "\t\t\tSMS" << endl;
+					setcolor(2, 0);
+					cout << "\tESC : Back" << endl << endl;
+					setcolor(15, 0);
+					sms->print_outboxlists(*book, inp);
+					cout << "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■" << endl;
+					sms->print_outsms(*book, inp);
+					key = getch();
+					if (key == UP && inp > 1)	inp--;
+					else if (key == DOWN && inp < sms->outSize()) inp++;
+					else if (key == ESC) break;
+				}
+			}
+			else
+			{
+				int inp = 1;
+				while (1)
+				{
+					system("cls");
+					cout << "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■" << endl;
+					setcolor(10, 0);
+					cout << "\t\t\tSMS" << endl;
+					setcolor(2, 0);
+					cout << "\tESC : Back" << endl << endl;
+					setcolor(15, 0);
+					sms->print_inboxlists(*book, inp);
+					cout << "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■" << endl;
+					sms->print_insms(*book, inp);
+					key = getch();
+					if (key == UP && inp > 1)	inp--;
+					else if (key == DOWN && inp < sms->inSize()) inp++;
+					else if (key == ESC) break;
+				}
+			}
+		}
+		else if (key == ESC) break;
+	}
+}
+
 int main(void)
 {
 	int input;
 	AddressBook* book = new AddressBook;
 	Call* call = new Call;
+	SMS* sms = new SMS;
 	while (1)
 	{
 		input = MainPrint();
@@ -139,6 +211,7 @@ int main(void)
 		}
 		else if (input == 3)
 		{
+			SMSPrint(sms,book);
 		}
 		else if (input == 4) break;
 	}

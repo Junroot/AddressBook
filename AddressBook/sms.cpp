@@ -1,7 +1,15 @@
-﻿#include "sms.h"
+﻿#include <Windows.h>
+#include "sms.h"
 #include "AddressBook.h"
 
 using namespace std;
+
+void setscolor(int color, int bgcolor)
+{
+	color &= 0xf;
+	bgcolor &= 0xf;
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), (bgcolor << 4) | color);
+}
 
 SMS::SMS()
 {
@@ -31,6 +39,7 @@ bool SMS::read_inboxfile()
 			return false;
 		}
 		getline(inbox_file,content);
+		getline(inbox_file, content);
 		in_sms new_in_sms(content, number, time);
 		inbox.insert(make_pair(time, new_in_sms));
 	}
@@ -50,6 +59,7 @@ bool SMS::read_outboxfile()
 			return false;
 		}
 		getline(outbox_file, content);
+		getline(outbox_file, content);
 		out_sms new_out_sms(content, number, time);
 		outbox.insert(make_pair(time, new_out_sms));
 		
@@ -65,48 +75,68 @@ bool SMS::read_outboxfile()
 *	서치한 결과가 있으면 저장된 이름으로 출력
 *	없으면 그냥 번호로 출력
 */
-void SMS::print_inboxlists(AddressBook book)
+void SMS::print_inboxlists(AddressBook book,int inp)
 {
+	int i = 1;
 	for (map<string, in_sms>::reverse_iterator it = inbox.rbegin();
 		it != inbox.rend(); it++)
 	{
-		cout << "sender: ";
+		cout << "\t";
+		if (i == inp) cout << "▶";
+		string str = it->first;
+		cout << "20" << str[0] << str[1] << "-";
+		cout << str[2] << str[3] << "-";
+		cout << str[4] << str[5] << "  ";
+		cout << str[6] << str[7] << ":";
+		cout << str[8] << str[9] << "  ";
 		if (book.SearchName(it->second.get_sender()) != "")
 		{
-			cout << book.SearchName(it->second.get_sender()) << endl;
+			printf("%-15s", book.SearchName(it->second.get_sender()).c_str());
 		}
 		else
 		{
-			cout << it->second.get_sender() << endl;
+			printf("%-15s", it->second.get_sender().c_str());
 		}
+		setscolor(8, 0);
 		if (it->second.get_content().size() <= 16)
 		{
 			cout << it->second.get_content() << endl;
 		}
 		else
 		{
-			for (int i = 0; i <= 16; i++)
+			for (int i = 0; i <= 12; i++)
 			{
 				cout << it->second.get_content()[i];
 			}
 			cout << "..." << endl;
 		}
+		setscolor(15, 0);
+		i++;
 	}
 }
-void SMS::print_outboxlists(AddressBook book)
+void SMS::print_outboxlists(AddressBook book, int inp)
 {
+	int i = 1;
 	for (map<string, out_sms>::reverse_iterator it = outbox.rbegin();
 		it != outbox.rend(); it++)
 	{
-		cout << "receiver: ";
+		cout << "\t";
+		if (i == inp) cout << "▶";
+		string str = it->first;
+		cout << "20" << str[0] << str[1] << "-";
+		cout << str[2] << str[3] << "-";
+		cout << str[4] << str[5] << "  ";
+		cout << str[6] << str[7] << ":";
+		cout << str[8] << str[9] << "  ";
 		if (book.SearchName(it->second.get_receiver()) != "")
 		{
-			cout << book.SearchName(it->second.get_receiver()) << endl;
+			printf("%-15s", book.SearchName(it->second.get_receiver()).c_str());
 		}
 		else
 		{
-			cout << it->second.get_receiver() << endl;
+			printf("%-15s", it->second.get_receiver().c_str());
 		}
+		setscolor(8, 0);
 		if (it->second.get_content().size() <= 16)
 		{
 			cout << it->second.get_content() << endl;
@@ -119,6 +149,8 @@ void SMS::print_outboxlists(AddressBook book)
 			}
 			cout << "..." << endl;
 		}
+		setscolor(15, 0);
+		i++;
 	}
 }
 
@@ -152,30 +184,50 @@ void out_sms::set_receiver(const string& r){ receiver = r; }
 void out_sms::set_time(const string& t){ send_time = t; }
 
 
-void print_sms(in_sms sms, AddressBook book)
+void SMS::print_insms(AddressBook book, int inp)
 {
-	cout << "sender: ";
-	if (book.SearchName(sms.get_sender()) != "")
+	int i = 1;
+	for (map<string, in_sms>::reverse_iterator it = inbox.rbegin();
+		it != inbox.rend(); it++)
 	{
-		cout << book.SearchName(sms.get_sender()) << endl;
+		if (i == inp)
+		{
+			cout << "sender: ";
+			if (book.SearchName(it->second.get_sender()) != "")
+			{
+				cout << book.SearchName(it->second.get_sender()) << endl;
+			}
+			else
+			{
+				cout << it->second.get_sender() << endl;
+			}
+			cout << it->second.get_content();
+			return;
+		}
+		i++;
 	}
-	else
-	{
-		cout << sms.get_sender() << endl;
-	}
-	cout << sms.get_content();
 }
 
-void print_sms(out_sms sms, AddressBook book)
+void SMS::print_outsms(AddressBook book, int inp)
 {
-	cout << "sender: ";
-	if (book.SearchName(sms.get_receiver()) != "")
+	int i = 1;
+	for (map<string, out_sms>::reverse_iterator it = outbox.rbegin();
+		it != outbox.rend(); it++)
 	{
-		cout << book.SearchName(sms.get_receiver()) << endl;
+		if (i == inp)
+		{
+			cout << "sender: ";
+			if (book.SearchName(it->second.get_receiver()) != "")
+			{
+				cout << book.SearchName(it->second.get_receiver()) << endl;
+			}
+			else
+			{
+				cout << it->second.get_receiver() << endl;
+			}
+			cout << it->second.get_content();
+			return;
+		}
+		i++;
 	}
-	else
-	{
-		cout << sms.get_receiver() << endl;
-	}
-	cout << sms.get_content();
 }
