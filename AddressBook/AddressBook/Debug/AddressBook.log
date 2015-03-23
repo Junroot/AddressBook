@@ -1,15 +1,31 @@
-﻿빌드 시작: 2015-03-22 오후 3:12:25
-     1>2 노드의 "C:\Users\SSOCKYEP\Documents\GitHub\MyAddressBook\AddressBook\AddressBook\AddressBook.vcxproj" 프로젝트(Build 대상)입니다.
+﻿빌드 시작: 2015-03-22 오후 5:01:35
+     1>2 노드의 "C:\Users\JunGeun\Desktop\ROOT\Class\OODP\AddressBook\AddressBook\AddressBook\AddressBook.vcxproj" 프로젝트(Build 대상)입니다.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AddressBook.cpp
-         AddressBook.cpp
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\SSOCKYEP\Documents\GitHub\MyAddressBook\AddressBook\Debug\AddressBook.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\SSOCKYEP\Documents\GitHub\MyAddressBook\AddressBook\Debug\AddressBook.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\SSOCKYEP\Documents\GitHub\MyAddressBook\AddressBook\Debug\AddressBook.lib" /MACHINE:X86 Debug\AddressBook.obj
-         Debug\main.obj
-         Debug\sms.obj
-         AddressBook.vcxproj -> C:\Users\SSOCKYEP\Documents\GitHub\MyAddressBook\AddressBook\Debug\AddressBook.exe
-     1>"C:\Users\SSOCKYEP\Documents\GitHub\MyAddressBook\AddressBook\AddressBook\AddressBook.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt sms.cpp
+         sms.cpp
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.h(27): error C2065: 'in_sms' : 선언되지 않은 식별자입니다.
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.h(27): error C2923: 'std::vector' : 'in_sms'은(는) '_Ty' 매개 변수에 대한 올바른 템플릿 형식 인수가 아닙니다.
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.h(28): error C2065: 'out_sms' : 선언되지 않은 식별자입니다.
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.h(28): error C2923: 'std::vector' : 'out_sms'은(는) '_Ty' 매개 변수에 대한 올바른 템플릿 형식 인수가 아닙니다.
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.cpp(7): error C2512: 'std::vector' : 사용할 수 있는 적절한 기본 생성자가 없습니다.
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.cpp(48): error C2663: 'std::vector<_Ty,_Alloc>::push_back' : 2개의 오버로드에서 'this' 포인터에 대한 변환이 잘못되었습니다.
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.cpp(76): error C2663: 'std::vector<_Ty,_Alloc>::push_back' : 2개의 오버로드에서 'this' 포인터에 대한 변환이 잘못되었습니다.
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.cpp(86): error C2663: 'std::vector<_Ty,_Alloc>::begin' : 2개의 오버로드에서 'this' 포인터에 대한 변환이 잘못되었습니다.
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.cpp(87): error C2663: 'std::vector<_Ty,_Alloc>::begin' : 2개의 오버로드에서 'this' 포인터에 대한 변환이 잘못되었습니다.
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.cpp(89): error C3867: 'in_sms::get_time': 함수 호출에 인수 목록이 없습니다. '&in_sms::get_time'을(를) 사용하여 멤버에 대한 포인터를 만드십시오.
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.cpp(90): error C3867: 'in_sms::get_sender': 함수 호출에 인수 목록이 없습니다. '&in_sms::get_sender'을(를) 사용하여 멤버에 대한 포인터를 만드십시오.
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.cpp(91): error C3867: 'in_sms::get_content': 함수 호출에 인수 목록이 없습니다. '&in_sms::get_content'을(를) 사용하여 멤버에 대한 포인터를 만드십시오.
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.cpp(98): warning C4129: 'o' : 문자 이스케이프 시퀀스를 인식할 수 없습니다.
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.cpp(99): error C2663: 'std::vector<_Ty,_Alloc>::begin' : 2개의 오버로드에서 'this' 포인터에 대한 변환이 잘못되었습니다.
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.cpp(100): error C2663: 'std::vector<_Ty,_Alloc>::begin' : 2개의 오버로드에서 'this' 포인터에 대한 변환이 잘못되었습니다.
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.cpp(102): error C3867: 'out_sms::get_time': 함수 호출에 인수 목록이 없습니다. '&out_sms::get_time'을(를) 사용하여 멤버에 대한 포인터를 만드십시오.
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.cpp(103): error C3867: 'out_sms::get_receiver': 함수 호출에 인수 목록이 없습니다. '&out_sms::get_receiver'을(를) 사용하여 멤버에 대한 포인터를 만드십시오.
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.cpp(104): error C3867: 'out_sms::get_content': 함수 호출에 인수 목록이 없습니다. '&out_sms::get_content'을(를) 사용하여 멤버에 대한 포인터를 만드십시오.
+     1>c:\users\jungeun\desktop\root\class\oodp\addressbook\addressbook\addressbook\sms.cpp(119): error C2662: '_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::size_type std::vector<_Ty,_Alloc>::size(void) throw() const' : 'this' 포인터를 'std::vector'에서 'const std::vector<_Ty,_Alloc> &'(으)로 변환할 수 없습니다.
+                 원인: 'std::vector'에서 'const std::vector<_Ty,_Alloc>'(으)로 변환할 수 없습니다.
+                 변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+     1>"C:\Users\JunGeun\Desktop\ROOT\Class\OODP\AddressBook\AddressBook\AddressBook\AddressBook.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
 
-빌드했습니다.
+빌드하지 못했습니다.
 
-경과 시간: 00:00:01.09
+경과 시간: 00:00:00.57
