@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿빌드 시작: 2015-03-22 오후 5:01:35
      1>2 노드의 "C:\Users\JunGeun\Desktop\ROOT\Class\OODP\AddressBook\AddressBook\AddressBook\AddressBook.vcxproj" 프로젝트(Build 대상)입니다.
      1>ClCompile:
@@ -25,7 +26,36 @@
                  원인: 'std::vector'에서 'const std::vector<_Ty,_Alloc>'(으)로 변환할 수 없습니다.
                  변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
      1>"C:\Users\JunGeun\Desktop\ROOT\Class\OODP\AddressBook\AddressBook\AddressBook\AddressBook.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+=======
+﻿빌드 시작: 2015-03-22 오후 8:41:30
+     1>2 노드의 "D:\Users\HyoSeok\Documents\GitHub\AddressBook\AddressBook\AddressBook\AddressBook.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AddressBook.cpp main.cpp sms.cpp
+         sms.cpp
+     1>d:\users\hyoseok\documents\github\addressbook\addressbook\addressbook\sms.cpp(98): warning C4129: 'o' : 문자 이스케이프 시퀀스를 인식할 수 없습니다.
+     1>d:\users\hyoseok\documents\github\addressbook\addressbook\addressbook\sms.cpp(119): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+         main.cpp
+     1>d:\users\hyoseok\documents\github\addressbook\addressbook\addressbook\main.cpp(42): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\conio.h(131) : 'getch' 선언을 참조하십시오.
+     1>d:\users\hyoseok\documents\github\addressbook\addressbook\addressbook\main.cpp(66): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\conio.h(131) : 'getch' 선언을 참조하십시오.
+     1>d:\users\hyoseok\documents\github\addressbook\addressbook\addressbook\main.cpp(101): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\conio.h(131) : 'getch' 선언을 참조하십시오.
+         AddressBook.cpp
+         코드를 생성하고 있습니다...
+     1>d:\users\hyoseok\documents\github\addressbook\addressbook\addressbook\addressbook.cpp(84): warning C4715: 'AddressBook::SearchName' : 모든 제어 경로에서 값을 반환하지는 않습니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\HyoSeok\Documents\GitHub\AddressBook\AddressBook\Debug\AddressBook.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Users\HyoSeok\Documents\GitHub\AddressBook\AddressBook\Debug\AddressBook.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\HyoSeok\Documents\GitHub\AddressBook\AddressBook\Debug\AddressBook.lib" /MACHINE:X86 Debug\AddressBook.obj
+         Debug\main.obj
+         Debug\sms.obj
+         AddressBook.vcxproj -> D:\Users\HyoSeok\Documents\GitHub\AddressBook\AddressBook\Debug\AddressBook.exe
+     1>"D:\Users\HyoSeok\Documents\GitHub\AddressBook\AddressBook\AddressBook\AddressBook.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+>>>>>>> origin/master
 
 빌드하지 못했습니다.
 
+<<<<<<< HEAD
 경과 시간: 00:00:00.57
+=======
+경과 시간: 00:00:03.01
+>>>>>>> origin/master

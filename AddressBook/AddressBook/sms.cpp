@@ -86,9 +86,9 @@ bool SMS::write_inboxfile()
 	for (vector<in_sms>::iterator it = inbox.begin();
 		it != inbox.begin(); it++)
 	{
-		inbox_file << it->get_time << endl;
-		inbox_file << it->get_sender << endl;
-		inbox_file << '\"' << it->get_content << '\"' << endl;
+		inbox_file << it->get_time() << endl;
+		inbox_file << it->get_sender() << endl;
+		inbox_file << '"' << it->get_content() << '"' << endl;
 	}
 	inbox_file.close();
 	return true;
@@ -99,9 +99,9 @@ bool SMS::write_outboxfile()
 	for (vector<out_sms>::iterator it = outbox.begin();
 		it != outbox.begin(); it++)
 	{
-		outbox_file << it->get_time << endl;
-		outbox_file << it->get_receiver << endl;
-		outbox_file << '\"' << it->get_content << '\"' << endl;
+		outbox_file << it->get_time() << endl;
+		outbox_file << it->get_receiver() << endl;
+		outbox_file << '"' << it->get_content() << '"' << endl;
 	}
 	outbox_file.close();
 	return true;
