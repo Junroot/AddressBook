@@ -1,11 +1,13 @@
 ﻿#ifndef __SMS_H__
 #define __SMS_H__
 
+#include <map>
 #include <vector>
 #include <string>
 #include <ctime>
 #include <fstream>
 #include <algorithm>
+#include "AddressBook.h"
 
 class in_sms
 {
@@ -61,14 +63,14 @@ public:
 	bool write_inboxfile();
 	bool write_outboxfile();
 
-	void print_inboxlists();
-	void print_outboxlists();
+	void print_inboxlists(AddressBook book);
+	void print_outboxlists(AddressBook book);
 
 private:
-	void sort_inbox();
-	void sort_outbox();
-	std::vector<in_sms> inbox;
-	std::vector<out_sms> outbox;
+	std::map<std::string,in_sms> inbox;
+	std::map<std::string,out_sms> outbox;
 };
 
+void print_sms(in_sms sms, AddressBook book);
+void print_sms(out_sms sms, AddressBook book);
 #endif
